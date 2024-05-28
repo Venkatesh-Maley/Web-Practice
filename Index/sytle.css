@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24),rgba(0, 0, 0, 0.24)),url(Images/moon1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 60%;
+}
+.Menu{
+    flex: 1;
+    text-align: right;
+    
+    
+}
+.Menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 6px;
+    position: relative;
+    
+}
+.Menu ul li a{
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.Menu ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    bottom: 3px;
+    transition: 0.5s;
+
+}
+.Menu ul li:hover::after{
+    width: 100%;
+
+
+}
+.box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.box h1{
+    font-size: 30px;
+    margin: 55px;
+}
+.box p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+    
+}
+.join{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    position: relative;
+    cursor: pointer;
+}
+.join:hover{
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.5s;
+    background: transparent;
+    font-weight: bold;
+}
+
+nav .fa{
+    display: none;
+}
+/*----
+@media(max-width: 700px){
+    .box h1{
+        font-size: 15px;
+        margin: 25px;
+    }
+    .Menu ul li{
+        display: block;
+    }
+    .Menu{
+        position: absolute;
+        background: rgb(23, 60, 116);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .Menu ul{
+        padding: 30px;
+    }
+}
+---*/
+
+/*----course----*/
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    
+
+}
+.course p{
+    color: rgb(75, 75, 75);
+    margin: -70px;
+
+    font-size: 14px;
+    
+    line-height: 20px;
+    padding: 80px;
+
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 31%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.055);
+
+}
+
+/*---
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+---*/
+/*----------Campus-----------*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+.campus h1{
+    padding-bottom: 20px;
+}
+.col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.col img{
+    width: 100%;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.layer:hover{
+    background: rgba(27, 0, 0, 0.205);
+}
+.layer h3{
+    width: 1000%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1;
+}
+.layer:hover h3{
+bottom: 49%;
+opacity: 1;
+}
+
+/*----Facilities-----*/
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.Fcol{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.Fcol img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Fcol p{
+    padding: 0;
+}
+.Fcol h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+/*---Call to Action---*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0)),url(Images/moon1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+    
+}
+.hero{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    position: relative;
+    cursor: pointer;
+}
+.hero:hover{
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.5s;
+    background: transparent;
+    font-weight: bold;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+
+    }
+}
+    
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+/*---
+.footer:h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+---*/
